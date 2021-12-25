@@ -12,4 +12,4 @@ An open source, lightweight alternative to the popular Standby list cleaner from
 # Credits
 
 - Wagnardsoft (Q&A)
-- wj32/ Wen Jia Liu (Original Application; ProcessHacker & Empty Standby List
+- wj32/ Wen Jia Liu (Original Application; ProcessHacker & Empty Standby List)
