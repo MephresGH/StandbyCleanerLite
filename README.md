@@ -5,7 +5,7 @@ An open source, lightweight alternative to the popular Standby list cleaner from
 - This minimal alternative was made for those who do not need, want or cannot use the additional parameters, commands of the original application without facing complications of any kind.
 - This program was compiled with .NET 3.5 and is console-based. For further information, watch Mike Unboxing's video on this topic.
 
-# Code
+# Download
 
 - The source code and application are provided in the download section of this repository.
 
