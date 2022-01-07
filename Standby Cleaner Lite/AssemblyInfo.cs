@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("Mephres")]
 [assembly: AssemblyProduct("Standby Cleaner Lite")]
-[assembly: AssemblyCopyright("Copyright © 2021 Mephres")]
+[assembly: AssemblyCopyright("Copyright © 2022 Mephres")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]
