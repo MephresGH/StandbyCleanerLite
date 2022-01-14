@@ -110,8 +110,7 @@ public class Program
                 else
                 {
                     SYSTEM_CACHE_INFORMATION_64_BIT information64Bit = new SYSTEM_CACHE_INFORMATION_64_BIT();
-                    information64Bit.MinimumWorkingSet = -1L;
-                    information64Bit.MaximumWorkingSet = -1L;
+                    information64Bit.MinimumWorkingSet = information64Bit.MaximumWorkingSet = -1L;
                     SystemInfoLength = Marshal.SizeOf(information64Bit);
                     gcHandle = GCHandle.Alloc(information64Bit, GCHandleType.Pinned);
                     num1 = NtSetSystemInformation(SystemFileCacheInformation, gcHandle.AddrOfPinnedObject(), SystemInfoLength);
