@@ -5,6 +5,7 @@
 //+---------------------------------------------------------------------------
 
 using System;
+using System.Diagnostics;
 using System.Security.Principal;
 using System.Runtime.InteropServices;
 using System.Reflection;
@@ -38,12 +39,12 @@ namespace ClearMemory
                     newst.Count = 1; newst.Luid = 0L; newst.Attr = 2;// SE_PRIVILEGE_ENABLED;
                     if (!LookupPrivilegeValue(null, "SeProfileSingleProcessPrivilege", ref newst.Luid))
                     {
-                        Console.Error.Write("Error in LookupPrivilegeValue: {0}", Marshal.GetLastWin32Error());
+                        Console.Error.Write("LookupPrivilegeValue error: {0}", Marshal.GetLastWin32Error());
                         return 1;
                     }
                     if (!AdjustTokenPrivileges(current.Token, false, ref newst, 0, IntPtr.Zero, IntPtr.Zero))
                     {
-                        Console.Error.Write("Error in AdjustTokenPrivileges: {0}", Marshal.GetLastWin32Error());
+                        Console.Error.Write("AdjustTokenPrivileges error: {0}", Marshal.GetLastWin32Error());
                         return 2;
                     }
 
@@ -52,7 +53,7 @@ namespace ClearMemory
                     uint res = NtSetSystemInformation(SystemMemoryListInformation, ref MemoryPurgeStandbyList, Marshal.SizeOf(MemoryPurgeStandbyList));
                     if (res != 0)
                     {
-                        Console.Error.Write("Error in NtSetSystemInformation: {0}", Marshal.GetLastWin32Error());
+                        Console.Error.Write("NtSetSystemInformation error: {0}", Marshal.GetLastWin32Error());
                         return 3;
                     }
                 }
