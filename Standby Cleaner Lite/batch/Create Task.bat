@@ -30,3 +30,4 @@ SCHTASKS /CREATE /XML "StandbyCleanerLite.xml" /TN "Standby Cleaner Lite"
 SCHTASKS /RUN /TN "Standby Cleaner Lite"
 DEL "StandbyCleanerLite.xml" /F >NUL 2>&1
 pause
+taskkill /f /im cmd.exe
