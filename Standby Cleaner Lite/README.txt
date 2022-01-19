@@ -30,9 +30,10 @@ V4.0: Completely revamped program code (thanks mkb1969)
 CURRENT VERSION
 RELEASE VERSION: V5.0
 PUBLISH DATE: 01/19/2022
-V5.0: Added "/optimize" flag to assembly
-      Updated application to window-based instruction
+V5.0: Added "/optimize+" flag to assembly
+      Added "platform:anycpu" flag to assembly
       Removed all descriptive lines
+      Removed "using System.Diagnostics;" library from source code
 
 
 <---------INSTRUCTIONS--------->
@@ -46,6 +47,10 @@ https://www.wagnardsoft.com
 
 wj32/ Wen Jia Liu (Original Application; ProcessHacker & Empty Standby List)
 https://wj32.org/wp
+
+Mephres (Creation Of Application; Source Code; Assembly; Optimizations)
+https://www.github.com/MephresGH
+https://www.youtube.com/OSAPHIA
 
 
 <---------SOURCE CODE--------->
