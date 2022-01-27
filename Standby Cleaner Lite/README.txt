@@ -30,8 +30,7 @@ V4.0: Completely revamped program code (thanks mkb1969)
 CURRENT VERSION
 RELEASE VERSION: V5.0
 PUBLISH DATE: 01/21/2022
-V5.0: Added "/optimize+" flag to assembly
-      Added "platform:x86" flag to assembly
+V5.0: Added "platform:x86" flag to assembly
       Added batch script for task removal
       Changed "/t:exe" to "/t:winexe"
       Fixed assembly script repeating assembly if binary location not present
