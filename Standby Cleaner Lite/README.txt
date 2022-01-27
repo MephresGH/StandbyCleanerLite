@@ -32,7 +32,6 @@ RELEASE VERSION: V5.0
 PUBLISH DATE: 01/21/2022
 V5.0: Added "platform:x86" flag to assembly
       Added batch script for task removal
-      Changed "/t:exe" to "/t:winexe"
       Fixed assembly script repeating assembly if binary location not present
       Improved clarity of icon
       Minimzed library usage for application, functions and assembly
